@@ -9,7 +9,7 @@
 #
 #
 #Conteúdo    enviado por: https://natura.di.uminho.pt/jjbin/fpln2023-tp1
-#            disponível em:
+#            disponível em: https://github.com/lbettero/PLNFolha8
 #
 #TAREFAS:
 #1. Calcular quantas publicações existem na base
