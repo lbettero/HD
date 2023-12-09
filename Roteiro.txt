@@ -1,0 +1,51 @@
+Universidade do Minho - UMinho
+Mestrado em Humanidades Digitais
+Processamento de Linguagem Natural
+
+Prof. José João
+
+Aluna: Lívia Pérez Bettero
+Matricula: PG52762
+
+
+Conteúdo    enviado por: https://natura.di.uminho.pt/jjbin/fpln2023-tp1
+            disponível em:
+
+TAREFAS:
+1. Calcular quantas publicações existem na base
+2. Extrair as listas das tags
+3. Calcular as tags que ocorrem e quanto ocorrem
+4. Extrair a gama de dados do texto
+5. Inventar qualquer coisa para fazer com o texto
+6. Contar palavras e recorrências do título de cada matéria única
+
+ROTEIRO:
+
+0. Preparação do texto para iniciar os exercícios:
+    le_arquivo_fonte(nomearquivo) ------------------> Leitura dos dados do arquivo fonte "folha8.Out.txt"
+    quebra_por_materias(folhaOito) -----------------> Quebra conteúdo por publicação e carregar na lista
+    separa_linhas_materias(materias) ---------------> Quebra de cada matéria por linhas para ser capaz de localizar o conteúdo
+
+1. Calcular quantas publicações existem na base
+    exercicio_01(materias) - Chama a seguinte função complementar:
+        Localiza_Titulos(lista_linhas_materias) ----> Localiza as linhas que contém títulos das metérias e as coloca em um dicionário
+
+2. Extrair as listas das tags
+    exercicio_02(materias) - Chama as seguintes funções complementares
+        Busca_Tags(materias) -----------------------> Serve para buscar as linhas iniciadas em "#TAG" e extrair as tags dentro de {}
+    No final da rotina, grava o resultaod no dicionário "Dicionario_Tags_Materias" e no arquivo de Exercicio_2_bettero.txt
+
+3. Calcular as tags que ocorrem e quanto ocorrem
+    exercicio_03() - Apenas imprime as tags e sua contagem de ocorências a partir do dicionário gerado no exercício anterior
+    além de gravar o resultado no arquivo Exercicio_3_bettero
+
+4. Extrair a gama de dados do texto
+    exercicio_04(materias) - Extrai os seguintes dados do texto: "secao_materia", "data_materia", "terceira_linha_apos_id", "linhasTags" e lista "etiqueta_materia"
+    Localiza_Gama_Dados(lista_linhas_materias) -----> Extrai as informações do texto e grava em no dicionário "Dicionario_Gama_Dados" e em um arquivo Exercicio_4_bettero.txt
+
+5. Inventar qualquer coisa para fazer com o texto
+    ecercicio_05() - Aproveitando o fato de que existem matérias duplicadas... Esta rotina é para imprimir relação de matérias duplicadas em algum lugar do arquivo fonte.
+    O resultado é impresso em tela e gravado no arquivo "Exercicio_5_bettero.txt"
+
+6. Contar palavras e recorrências do título de cada matéria única
+    exercicio_06(Dicionario_Titulos_Materias) ------> Remove as pontuações dos títulos no dicionário de títulos e quebra em palavras, gravadas em um novo dicionário, "Dicionario_Palavras", onde são colocadas em ordem pelo número de ocorrências, imprime na tela e grava em um arquivo "Exercicio_6_bettero.txt"
